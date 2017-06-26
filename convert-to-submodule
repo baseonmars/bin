@@ -1,0 +1,3 @@
+#!/bin/bash
+find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} remote -v \; | awk '{ print "git submodule add git+ssh://" $2; }' | uniq 
+

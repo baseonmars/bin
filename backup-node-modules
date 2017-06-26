@@ -1,0 +1,9 @@
+#!/bin/sh
+
+backup_dir="~/backups/node_modules"
+timestamp=`date +%s`
+target_dir="${backup_dir}/${PWD##*/}-${timestamp}"
+
+mkdir -p $backup_dir
+echo "Moving node_modules directory to ${target_dir}"
+mv ./node_modules ${target_dir}

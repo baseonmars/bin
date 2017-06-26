@@ -1,0 +1,14 @@
+#!/bin/sh
+
+bold=$(tput bold)
+cbold=$(tput sgr0)
+
+echo "${bold}Regenerating your ~/.npmrc"
+echo "==========================\n${cbold}"
+echo "${bold}Existing ~/.npmrc${cbold}"
+more ~/.npmrc
+echo "\n${bold}Download beginning${cbold}"
+curl -u "dan.etherington@schibsted.com:$ARTIFACTORY_API_KEY" https://artifacts.schibsted.io/artifactory/api/npm/auth > ~/.npmrc
+echo "\n${bold}New ~/.npmrc${cbold}"
+more ~/.npmrc
+echo "\n${bold}Note: ${cbold}You may wish to copy the password into a shell variable for use with internal repositories."

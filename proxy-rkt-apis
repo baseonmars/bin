@@ -1,0 +1,2 @@
+#!/bin/bash
+sshuttle -e "ssh -F $HOME/.ssh/config" --auto-nets --auto-hosts -r bastion-dev 10.71.0.0/16

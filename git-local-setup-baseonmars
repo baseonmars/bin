@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "setting local git repo to baseonmars git credentials"
+git config --local user.name "Dan Etherington"
+git config --local user.email "dan@baseonmars.co.uk"

@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "setting local git repo to Schibsted git credentials"
+git config --local user.name "Dan Etherington"
+git config --local user.email "dan.etherington@schibsted.com"

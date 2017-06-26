@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "Deleting macOS Calendar cache, the following files were deleted:"
+rm -rvf /Users/dan/Library/Calendars/Calendar\ Cache*
+rm -rvf /Users/dan/Library/Calendars/Pending\ Events/*
+rm -rvf /Users/dan/Library/Caches/com.apple.iCal
+rm -rvf /Users/dan/Library/Calendars/Email\ Cache.plist
