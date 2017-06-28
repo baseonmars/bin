@@ -1,0 +1,7 @@
+#!/bin/sh
+screenshots_dir=~/Desktop/screenshots
+echo "Setting screenshot directory to ${screenshots_dir}..."
+defaults write com.apple.screencapture location ${screenshots_dir}
+echo "Killing SystemUIServer..."
+killall SystemUIServer
+echo "Done."
