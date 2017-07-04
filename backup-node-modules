@@ -1,6 +1,6 @@
 #!/bin/sh
 
-backup_dir="~/backups/node_modules"
+backup_dir=~/backups/node_modules
 timestamp=`date +%s`
 target_dir="${backup_dir}/${PWD##*/}-${timestamp}"
 
