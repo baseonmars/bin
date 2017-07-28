@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Requires:
+# sudo easy_install Pygments
+# and
+# xmllint from xmllib2-utils (brew install xmllib2 I believe)
+
+xmllint --format $1 | pygmentize -l xml
